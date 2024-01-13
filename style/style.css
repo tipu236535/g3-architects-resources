@@ -129,43 +129,95 @@ main {
     font-weight: 400;
 }
 
+/* features section style */
+.features-section {
+    margin-top: 130px;
+    display: flex;
+    gap: 100px;
+
+}
+
+.features-section .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 5px;
+}
+
+.features-content .card {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.features-img img{
+    height: 80%;
+    margin-left: 90px;
+}
+
+.ten-years-badge {
+    width: 342px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    padding: 40px;
+    margin: 0;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    
+
+}
+.ten-years-badge h2{
+    font-size: 4rem;
+    }
+.ten-years-badge p{
+font-size: 1.5rem;
+}
+
 /* fact section */
 .fact-card-container {
     display: flex;
     justify-content: space-around;
-    
+
 }
+
 .fact-card-container .card {
     border-radius: 8px;
     border: 1px solid #FF900E;
+
     text-align: center;
     padding: 30px;
 }
-.fact-card-container .card-starts{
+
+.fact-card-container .card-starts {
     color: #424242;
-font-size: 2.8rem;
-margin-top: 10px;
-margin-bottom: 10px;
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
 
 }
-.fact-card-container .card-title{
+
+.fact-card-container .card-title {
     color: #727272;
-font-size: 1.25rem;
-font-weight: 600;
-margin: 5px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 5px;
 }
+
 /* sponsors style */
-.sponsors{
-   text-align: center;
+.sponsors {
+    text-align: center;
 }
-.sponsors-img-container{
+
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
     gap: 20px;
     align-items: center;
 }
-.sponsors-img-container img{
+
+.sponsors-img-container img {
     width: 165;
 
 }
@@ -186,7 +238,8 @@ margin: 5px;
     nav,
     .terms-container,
     .fact-card-container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .features-section {
         flex-direction: column;
     }
 
@@ -199,7 +252,16 @@ margin: 5px;
     .terms-img-container {
         grid-template-columns: 1fr;
     }
-    .fact-card-container{
+    .features-img{
+        width: 10%;
+        margin-left: 0;
+    }
+    .ten-years-badge{
+        position: static;
+        max-width: 300px;
+    }
+
+    .fact-card-container {
         gap: 20px;
     }
 
@@ -212,7 +274,8 @@ margin: 5px;
 
     nav,
     .terms-container,
-    .sponsors-img-container {
+    .sponsors-img-container,
+    .features-section {
         flex-direction: column;
     }
 
