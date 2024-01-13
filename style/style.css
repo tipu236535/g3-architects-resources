@@ -4,16 +4,18 @@
 * {
     font-family: 'Work Sans', sans-serif;
 }
-.btn-primary{
-border-radius: 8px;
-background: #FF900E;
-padding: 20px 25px;
-color: #FFF;
-font-size: 1.25rem;
-font-weight: 600;
-cursor: pointer;
-border: 0;
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
 }
+
 /* header style */
 header {
     background: rgba(255, 144, 14, 0.10);
@@ -44,48 +46,99 @@ nav li a {
     text-decoration: none;
     color: #424242;
 }
-.nav-title{
+
+.nav-title {
     font-weight: 700;
     font-size: 2.8rem;
-    color:  #131313;
+    color: #131313;
 }
+
 /* banner style */
-.banner-content{
+.banner-content {
     max-width: 800px;
     text-align: center;
     margin: 0 auto;
 }
-.banner-title{
-    color:  #131313;
-text-align: center;
-font-size: 4rem;
-font-weight: 700;
+
+.banner-title {
+    color: #131313;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
 }
-.banner-description{
+
+.banner-description {
     color: #727272;
-text-align: center;
-font-size: 1rem;
-font-weight: 400;}
-.banner img{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner img {
     width: 100%;
     margin-top: 20px;
 }
+
 /* responsive media queries */
-@media  screen and (max-width:576px) {
-    header{
+@media screen and (max-width:576px) {
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    
+
 }
+
 @media screen and (min-width:576px) and (max-width:960px) {
-    header{
+    header {
         padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
     }
-    
+
+}
+
+/* main style */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Features style*/
+.terms-container {
+    display: flex;
+    align-items: center;
+}
+
+.terms-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+
+}
+
+.terms-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.terms-title {
+    font-size: 2.8rem;
+}
+
+.quick-list {
+    color: #727272;
+    font-weight: 500;
+}
+.of-our{
+    color:  #131313;
+font-weight: 700;
+}
+.features{
+    color: #FF900E;
+font-weight: 700;
 }
